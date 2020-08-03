@@ -1,1 +1,1 @@
-Personal exercises for Coding Interviews
+Personal exercises for coding interviews
