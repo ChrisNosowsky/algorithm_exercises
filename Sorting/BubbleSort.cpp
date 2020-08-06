@@ -1,10 +1,11 @@
-#include <math.h>;
-
+#include <math.h>
+#include <vector>
+using namespace std;
 
 class Solution {
-    void bubblesort(int arry[]) {
+    void bubblesort(vector<int> arry) {
         bool isSorted = false;
-        int lastUnsorted = sizeof(arry)/sizeof(arry[0]) - 1;
+        int lastUnsorted = arry.size() - 1;
         while(!isSorted) {
             isSorted = true;
             for(int i=0; i < lastUnsorted; i++) {
@@ -17,7 +18,7 @@ class Solution {
         }
     }
 
-    void swap(int array[], int i, int j) {
+    void swap(vector<int> array, int i, int j) {
         int tmp = array[i];
         array[i] = array[j];
         array[j] = tmp;
