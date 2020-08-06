@@ -5,6 +5,7 @@
 #include <vector>
 using namespace std;
 
+
 vector<bool> sieveOfErathosthenes(int max) {
     vector<bool> flags;
     int count = 0;
