@@ -1,5 +1,6 @@
 #include <math.h>
 
+
 bool primeOptimized(int n) {
     if (n < 2) {
         return false;
