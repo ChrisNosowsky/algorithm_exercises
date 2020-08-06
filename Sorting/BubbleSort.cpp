@@ -2,14 +2,14 @@
 
 
 class Solution {
-    void bubblesort(int array[]) {
-        boolean isSorted = false;
-        int lastUnsorted = array.length - 1;
+    void bubblesort(int arry[]) {
+        bool isSorted = false;
+        int lastUnsorted = sizeof(arry)/sizeof(arry[0]) - 1;
         while(!isSorted) {
             isSorted = true;
             for(int i=0; i < lastUnsorted; i++) {
-                if (array[i] > array[i+1]) {
-                    swap(array, i, i + 1);
+                if (arry[i] > arry[i+1]) {
+                    swap(arry, i, i + 1);
                     isSorted = false;
                 }
             }
@@ -22,4 +22,4 @@ class Solution {
         array[i] = array[j];
         array[j] = tmp;
     }
-}
+};
