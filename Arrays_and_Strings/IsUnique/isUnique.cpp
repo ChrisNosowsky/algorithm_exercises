@@ -1,12 +1,13 @@
-boolean isUniqueChars(String str) {
+#include <string>
+using namespace std;
+
+bool isUniqueChars(string str) {
     if (str.length() > 128) return false;
     
-    boolean[] char_set = new boolean[128];
+    bool char_set[128];
     for(int i = 0; i < str.length(); i++) {
-        int val = str.charAt(i);
-        if (char_set[val]) {
-            return false;
-        }
+        int val = str.at(i);
+        if (char_set[val]) return false;
         char_set[val] = true;
     }
     return true;
