@@ -1,7 +1,7 @@
 #include <stdio.h>
+#include <vector>
 
-
-void quickSort(int[] arr, int left, int right) {
+void quickSort(std::vector<int> arr, int left, int right) {
     int index = partition(arr, left, right);
     if (left < index - 1) {
         quickSort(arr, left, right - 1);
@@ -12,7 +12,7 @@ void quickSort(int[] arr, int left, int right) {
 }
 
 
-int partition(int[] arr, int left, int right) {
+int partition(std::vector<int> arr, int left, int right) {
     int pivot = arr[left + (right - left) / 2];
     while (left <= right) {
         // Find element on left that should be on right
@@ -28,4 +28,8 @@ int partition(int[] arr, int left, int right) {
             right--;
         }
     }
+}
+
+int swap(std::vector<int> a, int left, int right) {
+    return -1; // work still
 }
