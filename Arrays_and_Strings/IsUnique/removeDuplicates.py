@@ -11,4 +11,4 @@ def remove_duplicates(arr):
     return arr
 
 array_ex = [10, 5, 7, 3, 20, 190, 190, 190, 190, 10, 7, 3, 6, 23, 7]
-print(remove_duplicates(array_ex))
+remove_duplicates(array_ex)
